@@ -74,7 +74,7 @@ img {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -107,6 +107,8 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -171,9 +173,21 @@ img {
 
 .hero {
   padding: 188px 0;
-  background-color: var(--title-text-color);
-
+  background-color: rgba(46, 47, 66, 0.7);
   text-align: center;
+<<<<<<< HEAD
+}
+.hero-img {
+  background-size: cover;
+
+  background-image: linear-gradient(
+      to top,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/img-first-page/people-office-1.png);
+=======
+>>>>>>> 6cafdbc714725f38394486d22ca1239f59e3d410
 }
 .hero-title {
   font-weight: 700;
@@ -220,6 +234,15 @@ img {
 .priorities-list {
   display: flex;
 }
+.priorities-list .action {
+  width: 264px;
+  height: 112px;
+  background: var(--studio-white-color);
+
+  display: flex;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
 .priorities-list .item:not(:last-child) {
   margin-right: 22px;
 }
@@ -260,9 +283,9 @@ img {
 
 .team-section {
   background: var(--studio-white-color);
-  height: 732px;
+  height: 770px;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 110px;
 }
 
 .team {
@@ -288,7 +311,7 @@ img {
 }
 .team-list .item {
   width: 264px;
-  height: 380px;
+  height: 428px;
   background-color: #fff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -300,16 +323,101 @@ img {
 .team-list .item:not(:last-child) {
   margin-right: 24px;
 }
+.team-list .item p {
+  margin-bottom: 8px;
+}
+.team-icons {
+  display: flex;
+  justify-content: center;
+}
+.team-icon {
+  width: 40px;
+  height: 40px;
+  fill: #4d5ae5;
+}
+.team-icon:not(:last-child) {
+  margin-right: 24px;
+}
+.team-icon:hover {
+  fill: var(--focus-btn-color);
+}
+/* =================COSTOMERS================== */
+
+.costomers {
+  display: flex;
+  padding-top: 130px;
+}
+.costomers h2 {
+  margin-bottom: 72px;
+  text-align: center;
+}
+.costomers-list {
+  display: flex;
+  padding-bottom: 120px;
+  gap: 24px;
+}
+
+.costomers-list .item {
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.action {
+  width: 168px;
+  height: 88px;
+}
 
 /* FOOTER */
 
 .footer-box {
+  background-color: var(--title-text-color);
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.footer-logo-studio {
+  color: var(--studio-white-color);
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+.footer-container {
+  display: flex;
+}
+.footer-item {
+  margin-right: 120px;
+}
+
 .footer-text {
   width: 264px;
   margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e7e9fc;
+}
+.social-footer .list {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.social-footer h2 {
+  font-size: 16px;
+  line-height: 150%; /* 24/16 */
+  color: var(--bgc-white-color);
+  margin-bottom: 16px;
+}
+.social-footer .action {
+  width: 40px;
+  height: 40px;
+  fill: rgba(255, 255, 255, 0.1);
+
+}
+.social-footer .action:not(:last-child) {
+  margin-right: 16px;
+}
+.social-footer .action:hover {
+  fill: #31d0aa;
 }
 
 /* PORTFOLIO */
@@ -370,11 +478,19 @@ img {
   flex-wrap: wrap;
 }
 
+.portfolio-box:nth-child(-n + 6) {
+  margin-bottom: 48px;
+}
 .portfolio-box {
   margin-right: 24px;
+<<<<<<< HEAD
+  cursor: pointer;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+=======
 }
 .portfolio-box:nth-child(-n + 6) {
   margin-bottom: 48px;
+>>>>>>> 6cafdbc714725f38394486d22ca1239f59e3d410
 }
 
 .portfolio-box h3 {
@@ -384,6 +500,11 @@ img {
 .portfolio-box:nth-child(3n) {
   margin-right: -24px;
 }
+.portfolio-box:hover {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .portfolio-title {
   border-left: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
@@ -392,6 +513,8 @@ img {
   padding-bottom: 32px;
   padding-left: 16px;
 }
+<<<<<<< HEAD
+=======
 
 /* Footer */
 
@@ -410,3 +533,4 @@ img {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
 }
+>>>>>>> 6cafdbc714725f38394486d22ca1239f59e3d410
